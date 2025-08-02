@@ -17,6 +17,7 @@
   --gradiant-color--end: rgba(19, 19, 19, 0);
   --gradiant-direction: to top;
   --footer-bottom:rgba(255, 255, 255, 0.60);
+  --partner-icon:rgba(255, 255, 255, 0.15);
 }
 
 @font-face {
@@ -124,6 +125,10 @@ header .row nav ul li a {
   opacity: 0.7;
   font-size: 16px;
   font-weight: 400;
+}
+header .row nav ul li #home {
+  color: var(--nav-text);
+  opacity: 1;
 }
 header .row nav ul #more {
   display: none;

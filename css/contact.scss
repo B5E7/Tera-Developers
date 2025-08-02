@@ -1,0 +1,435 @@
+@use "./colos.scss";
+@use "./fonts.scss";
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h1,h2,h3,h4,h5,h6,a,p,button,input,span{
+    font-family: Montserrat, sans-serif;
+}
+
+
+//mixin for Display flex//
+@mixin flex($justify-content,$align-items){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+//mixin for fonts//
+
+@mixin font($font-size,$font-weight){
+    font-size:$font-size ;
+    font-weight:$font-weight ;
+}
+
+
+//_________________header______________//
+header{
+    position: fixed;
+    background: var(--black);
+    width: 100%;
+    z-index: 1;
+    
+    .row{
+        @include flex(space-between, center );
+        padding: 10px 40px;
+        .burger-menu{
+            display: none;
+            svg{
+                width: 20px;
+                height: 20px;
+                color: var(--white);
+            }
+        }
+        .logo{
+            a{
+                outline: none;
+                border: none;
+                &:hover{
+                    cursor: pointer;
+                }
+                img{
+                    width:72px ;
+                    height: 40px;
+                }
+            }
+        }
+        nav{
+            ul{
+                gap: 1.25rem;
+                @include flex(space-between, center );
+                li{
+                    :hover{
+                        opacity: 1.0;
+                    }
+                    a{
+                        color: var(--nav-text);
+                        opacity: 0.7;
+                        @include font(16px, 400);
+                    }
+                    #contact_us{
+                        color: var(--nav-text);
+                        opacity: 1.0;
+                    }
+                }
+                #more{
+                    display: none
+                }
+                 
+            }
+            
+        }
+
+        .icons{
+            @include flex(space-between, center );
+            gap: 1rem;
+            .account{
+                outline: none;
+                border: none;
+                background-color: transparent;
+                svg{
+                    width: 22px;
+                    height: 22px;
+                    color: var(--nav-text);
+                }
+            }
+            .cart{
+                outline: none;
+                border: none;
+                background-color: transparent;
+                svg{
+                    width: 22px;
+                    height: 22px;
+                    color: var(--nav-text);
+                }
+            }
+        }
+    }
+    
+}
+
+//_____________header media______________//
+
+@media (max-width:800px){
+    header{
+        .row{
+            > nav{
+                ul{
+                    #contact{
+                        display: none;
+                    }
+                    #more{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px){
+    header{
+        .burger-menu{
+            display: block !important;
+        }
+        nav{
+            display: none;
+        }
+    }
+}
+
+//_______________________________hero_____________________//
+
+.hero{
+    background-color: var(--black2);
+    padding: 165px 20px 100px 20px;
+    .row{
+        background-color: var(--grey8);
+        padding: 32px;
+        @include flex(space-between, center);
+        gap: 48px;
+        border-radius: 8px;
+        .img{
+            width: 50%;
+            padding: 10px;
+            border: 1px solid var(--orange);
+            border-radius:8px;
+            img{
+                width: 100%;
+            }
+        }
+        .content{
+            width: 50%;
+            h1{
+                @include font(48ox, 700);
+                line-height: 84px;
+                color: var(--white);
+            }
+            > ul{
+                @include flex(space-between, start);
+                flex-direction: column;
+                gap: 15.4px;
+                li{
+                    @include flex(space-between, center);
+                    gap: 8px;
+                    p{
+                        @include font(16px, 400);
+                        color: var(--white);
+                        line-height: 25.6px;
+                    }
+                }
+                padding-bottom: 36px;
+            }
+            .bottom{
+                border-top: 1px solid var(--white);
+                padding-top: 36px;
+                h2{
+                    @include font(20px, 600);
+                    color: var(--white);
+                    line-height: 35px;
+                    padding-bottom: 24px
+                }
+                ul{
+                    @include flex(flex-start, center);
+                    gap: 11.2px;
+                }
+            }
+        }
+    }
+}
+
+//_______________________________media hero_____________________//
+
+
+@media (max-width:750px){
+    .hero{
+        .row{
+            flex-direction: column;
+            .img,.content{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+//______________________Send A Message_________________________________//
+
+
+.message{
+    background-color: var(--black2);
+    padding: 48px 20px 140px 20px;
+    @include flex(space-between, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    .container{
+        @include flex(space-between, center);
+        flex-direction: column;
+        h1{
+        @include font(48px, 700);
+        line-height: 84px;
+        color: var(--grey);
+        text-align: center;
+        }
+        p{
+            @include font(18px, 400);
+            line-height: 25.2px;
+            color: var(--grey);
+            max-width: 600px;
+            text-align: center;
+            
+        }
+        .form{
+            @include flex(space-between, normal);
+            gap: 24px;
+            flex-wrap: wrap;
+            padding-top: 50px;
+            #name{
+                width: calc(50% - 12px);
+                background-color: var(--black3);
+                padding: 20px;
+                @include font(16px, 400);
+                color: var(--white);
+                border: 1px solid var(--grey9);
+                border-radius: 4px;
+            }
+            #email{
+                width: calc(50% - 12px);
+                background-color: var(--black3);
+                padding: 20px;
+                @include font(16px, 400);
+                color: var(--white);
+                border: 1px solid var(--grey9);
+                border-radius: 4px;
+            }
+            #phone{
+                width: 100%;
+                background-color: var(--black3);
+                padding: 20px;
+                @include font(16px, 400);
+                color: var(--white);
+                border: 1px solid var(--grey9);
+                border-radius: 4px;
+            }
+    
+            #comment{
+                width: 100%;
+                height: 290px;
+                background-color: var(--black3);
+                padding: 20px;
+                @include font(16px, 400);
+                color: var(--white);
+                border: 1px solid var(--grey9);
+                border-radius: 4px;
+            }
+        }
+        
+        a{
+            @include flex(space-between, center);
+            background-color: var(--white);
+            color: var(--black);
+            @include font(16px, 500);
+            gap: 12px;
+            padding: 16px 42px;
+            border-radius: 4px;
+            margin-top: 24px;
+            max-width: 272px;
+            align-self: center;
+        }
+    } 
+    
+}
+
+
+//______________________media Send A Message_________________________________//
+
+
+@media (max-width:750px){
+    .message{
+        .container{
+            align-items: stretch;
+            .form{
+                flex-direction: column;
+                input{
+                    width: 100%  !important;
+                }
+        }
+        }
+        
+    }
+}
+
+
+//____________________________footer_______________________//
+
+footer{
+    background-color: var(--black);
+    padding: 64px 20px 20px 20px ;
+    .top-row{
+        @include flex(space-between, start);
+        padding-bottom: 45px;
+        .left{
+            width: 40%;
+            ul{
+                @include flex(space-between, start);
+                flex-direction: column;
+                gap: 30px;
+                p{
+                    @include font(18px, 400);
+                    line-height: 28.8px;
+                    color: var(--grey4);
+                    max-width: 400px;
+                }
+            }
+        }
+        .right{
+            @include flex(space-between, start);
+            width: 60%;
+            ul{
+                @include flex(space-between, start);
+                flex-direction: column;
+                gap: 16px;
+                width: 33.33%;
+                h3{
+                    @include font(16px, 600);
+                    color: var(--white);
+                    margin-bottom: 11px;
+                }
+                a{
+                    @include font(16px, 400);
+                    color: var(--grey4);
+                }
+            }
+        }
+    }
+
+    .bottom-row{
+        @include flex(space-between, center);
+        padding: 35px 0 15px 0;
+        border-top: 2px solid var(--grey6);
+        .left{
+            @include flex(space-between, center);
+            gap: 20px;
+            p{
+                @include font(12px, 400);
+                color: var(--footer-bottom);
+            }
+            h6{
+                @include font(12px, 400);
+                color: var(--footer-bottom);
+            }
+        }
+        .right{
+            @include flex(space-between, center);
+            gap: 11px;
+        }
+    }
+}
+
+
+//______________________media footer________________//
+
+@media (max-width:600px){
+    .top-row{
+        flex-direction: column;
+        align-items: center !important;
+        gap: 40px;
+        .left{
+            width: 100% !important;
+            ul{
+                text-align: center;
+                align-items: center !important;
+            }
+        }
+        .right{
+            flex-direction: column;
+            gap: 30px;
+            ul{
+                width: 100% !important;
+            }
+        }
+    }
+    .bottom-row{
+        flex-direction: column;
+        gap: 25px;
+        .left{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
