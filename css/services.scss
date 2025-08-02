@@ -233,135 +233,139 @@ header{
 .partner{
     background-color: var(--black2);
     padding-top: 100px;
-    .heading{
-        @include flex(space-between, center);
-        flex-direction: column;
-        padding: 0 20px;
-        h1{
-            @include font(16px, 400);
-            color: var(--orange);
-            text-align: center;
-            text-transform: uppercase;
+    .overlay{
+        background: linear-gradient(0deg, var(--color-grey-2, #050505) 0%, var(--color-grey-20, rgba(5, 5, 5, 0)) 100%);
+        .heading{
+            @include flex(space-between, center);
+            flex-direction: column;
+            padding: 0 20px;
+            h1{
+                @include font(16px, 400);
+                color: var(--orange);
+                text-align: center;
+                text-transform: uppercase;
+            }
+            h2{
+                @include font(48px, 700);
+                color: var(--grey);
+                text-align: center;
+                line-height: 84px;
+            }
+            p{
+                @include font(18px, 400);
+                color: var(--grey);
+                text-align: center;
+                line-height: 28.8px;
+                max-width: 600px;
+            }
         }
-        h2{
-            @include font(48px, 700);
-            color: var(--grey);
-            text-align: center;
-            line-height: 84px;
-        }
-        p{
-            @include font(18px, 400);
-            color: var(--grey);
-            text-align: center;
-            line-height: 28.8px;
-            max-width: 600px;
+    
+        .row{
+            @include flex(space-between, center);
+            gap: 24px;
+            margin-top: 50px;
+            padding: 0 20px;
+            padding-bottom: 100px;
+            background: linear-gradient(0deg, var(--color-grey-2, #050505) 0%, var(--color-grey-20, rgba(5, 5, 5, 0.00)) 100%);
+        
+            .item-1{
+                width: 25%;
+                @include flex(space-between, center);
+                flex-direction: column;
+                img{
+                    background-color: var(--partner-icon);
+                    padding: 16px;
+                    border-radius: 8px;
+                    margin-bottom: 15px
+                }
+                h2{
+                    @include font(32px, 600);
+                    color: var(--grey);
+                    text-align: center;
+                    line-height: 56px;
+                }
+                p{
+                    @include font(16px, 400);
+                    color: var(--grey);
+                    text-align: center;
+                    line-height: 25.6px;
+                }
+            }
+        
+            .item-2{
+                width: 25%;
+                @include flex(space-between, center);
+                flex-direction: column;
+                img{
+                    background-color: var(--partner-icon);
+                    padding: 16px;
+                    border-radius: 8px;
+                    margin-bottom: 15px
+                }
+                h2{
+                    @include font(32px, 600);
+                    color: var(--grey);
+                    text-align: center;
+                    line-height: 56px;
+                }
+                p{
+                    @include font(16px, 400);
+                    color: var(--grey);
+                    text-align: center;
+                    line-height: 25.6px;
+                }
+            }
+        
+            .item-3{
+                width: 25%;
+                @include flex(space-between, center);
+                flex-direction: column;
+                img{
+                    background-color: var(--partner-icon);
+                    padding: 16px;
+                    border-radius: 8px;
+                    margin-bottom: 15px
+                }
+                h2{
+                    @include font(32px, 600);
+                    color: var(--grey);
+                    text-align: center;
+                    line-height: 56px;
+                }
+                p{
+                    @include font(16px, 400);
+                    color: var(--grey);
+                    text-align: center;
+                    line-height: 25.6px;
+                }
+            }
+        
+            .item-4{
+                width: 25%;
+                @include flex(space-between, center);
+                flex-direction: column;
+                img{
+                    background-color: var(--partner-icon);
+                    padding: 16px;
+                    border-radius: 8px;
+                    margin-bottom: 15px
+                }
+                h2{
+                    @include font(32px, 600);
+                    color: var(--grey);
+                    text-align: center;
+                    line-height: 56px;
+                }
+                p{
+                    @include font(16px, 400);
+                    color: var(--grey);
+                    text-align: center;
+                    line-height: 25.6px;
+                }
+            }
         }
     }
-
-    .row{
-        @include flex(space-between, center);
-        gap: 24px;
-        margin-top: 50px;
-        padding: 0 20px;
-        padding-bottom: 100px;
-        background: linear-gradient(0deg, var(--color-grey-2, #050505) 0%, var(--color-grey-20, rgba(5, 5, 5, 0.00)) 100%);
-
-        .item-1{
-            width: 25%;
-            @include flex(space-between, center);
-            flex-direction: column;
-            img{
-                background-color: var(--partner-icon);
-                padding: 16px;
-                border-radius: 8px;
-                margin-bottom: 15px
-            }
-            h2{
-                @include font(32px, 600);
-                color: var(--grey);
-                text-align: center;
-                line-height: 56px;
-            }
-            p{
-                @include font(16px, 400);
-                color: var(--grey);
-                text-align: center;
-                line-height: 25.6px;
-            }
-        }
-
-        .item-2{
-            width: 25%;
-            @include flex(space-between, center);
-            flex-direction: column;
-            img{
-                background-color: var(--partner-icon);
-                padding: 16px;
-                border-radius: 8px;
-                margin-bottom: 15px
-            }
-            h2{
-                @include font(32px, 600);
-                color: var(--grey);
-                text-align: center;
-                line-height: 56px;
-            }
-            p{
-                @include font(16px, 400);
-                color: var(--grey);
-                text-align: center;
-                line-height: 25.6px;
-            }
-        }
-
-        .item-3{
-            width: 25%;
-            @include flex(space-between, center);
-            flex-direction: column;
-            img{
-                background-color: var(--partner-icon);
-                padding: 16px;
-                border-radius: 8px;
-                margin-bottom: 15px
-            }
-            h2{
-                @include font(32px, 600);
-                color: var(--grey);
-                text-align: center;
-                line-height: 56px;
-            }
-            p{
-                @include font(16px, 400);
-                color: var(--grey);
-                text-align: center;
-                line-height: 25.6px;
-            }
-        }
-
-        .item-4{
-            width: 25%;
-            @include flex(space-between, center);
-            flex-direction: column;
-            img{
-                background-color: var(--partner-icon);
-                padding: 16px;
-                border-radius: 8px;
-                margin-bottom: 15px
-            }
-            h2{
-                @include font(32px, 600);
-                color: var(--grey);
-                text-align: center;
-                line-height: 56px;
-            }
-            p{
-                @include font(16px, 400);
-                color: var(--grey);
-                text-align: center;
-                line-height: 25.6px;
-            }
-        }
-    }
+    
 }
 
 //___________________media Partner_________________________//

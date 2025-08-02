@@ -1,6 +1,7 @@
 :root {
   --black:#000;
   --black2:#131313;
+  --black3:#403E3B;
   --nav-text:rgb(227, 227, 227 );
   --orange:#CE9E4A;
   --white:#fff;
@@ -10,6 +11,9 @@
   --grey4:#DADADA;
   --grey5:#DFDFDD;
   --grey6:#666;
+  --grey7:rgba(227, 227, 227, 0.60);
+  --grey8:#1C1C1C;
+  --grey9:#737373
   --home-bloges:rgba(255, 255, 255, 0.03);
   --home-bloges-hover:#fff1;
   --questions-border:rgba(246, 237, 221, 0.20);

@@ -1,6 +1,7 @@
 :root {
   --black:#000;
   --black2:#131313;
+  --black3:#403E3B;
   --nav-text:rgb(227, 227, 227 );
   --orange:#CE9E4A;
   --white:#fff;
@@ -10,6 +11,9 @@
   --grey4:#DADADA;
   --grey5:#DFDFDD;
   --grey6:#666;
+  --grey7:rgba(227, 227, 227, 0.60);
+  --grey8:#1C1C1C;
+  --grey9:#737373
   --home-bloges:rgba(255, 255, 255, 0.03);
   --home-bloges-hover:#fff1;
   --questions-border:rgba(246, 237, 221, 0.20);
@@ -251,28 +255,31 @@ header .row .icons .cart svg {
   background-color: var(--black2);
   padding-top: 100px;
 }
-.partner .heading {
+.partner .overlay {
+  background: linear-gradient(0deg, var(--color-grey-2, #050505) 0%, var(--color-grey-20, rgba(5, 5, 5, 0)) 100%);
+}
+.partner .overlay .heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   padding: 0 20px;
 }
-.partner .heading h1 {
+.partner .overlay .heading h1 {
   font-size: 16px;
   font-weight: 400;
   color: var(--orange);
   text-align: center;
   text-transform: uppercase;
 }
-.partner .heading h2 {
+.partner .overlay .heading h2 {
   font-size: 48px;
   font-weight: 700;
   color: var(--grey);
   text-align: center;
   line-height: 84px;
 }
-.partner .heading p {
+.partner .overlay .heading p {
   font-size: 18px;
   font-weight: 400;
   color: var(--grey);
@@ -280,7 +287,7 @@ header .row .icons .cart svg {
   line-height: 28.8px;
   max-width: 600px;
 }
-.partner .row {
+.partner .overlay .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -290,108 +297,108 @@ header .row .icons .cart svg {
   padding-bottom: 100px;
   background: linear-gradient(0deg, var(--color-grey-2, #050505) 0%, var(--color-grey-20, rgba(5, 5, 5, 0)) 100%);
 }
-.partner .row .item-1 {
+.partner .overlay .row .item-1 {
   width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
-.partner .row .item-1 img {
+.partner .overlay .row .item-1 img {
   background-color: var(--partner-icon);
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
-.partner .row .item-1 h2 {
+.partner .overlay .row .item-1 h2 {
   font-size: 32px;
   font-weight: 600;
   color: var(--grey);
   text-align: center;
   line-height: 56px;
 }
-.partner .row .item-1 p {
+.partner .overlay .row .item-1 p {
   font-size: 16px;
   font-weight: 400;
   color: var(--grey);
   text-align: center;
   line-height: 25.6px;
 }
-.partner .row .item-2 {
+.partner .overlay .row .item-2 {
   width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
-.partner .row .item-2 img {
+.partner .overlay .row .item-2 img {
   background-color: var(--partner-icon);
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
-.partner .row .item-2 h2 {
+.partner .overlay .row .item-2 h2 {
   font-size: 32px;
   font-weight: 600;
   color: var(--grey);
   text-align: center;
   line-height: 56px;
 }
-.partner .row .item-2 p {
+.partner .overlay .row .item-2 p {
   font-size: 16px;
   font-weight: 400;
   color: var(--grey);
   text-align: center;
   line-height: 25.6px;
 }
-.partner .row .item-3 {
+.partner .overlay .row .item-3 {
   width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
-.partner .row .item-3 img {
+.partner .overlay .row .item-3 img {
   background-color: var(--partner-icon);
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
-.partner .row .item-3 h2 {
+.partner .overlay .row .item-3 h2 {
   font-size: 32px;
   font-weight: 600;
   color: var(--grey);
   text-align: center;
   line-height: 56px;
 }
-.partner .row .item-3 p {
+.partner .overlay .row .item-3 p {
   font-size: 16px;
   font-weight: 400;
   color: var(--grey);
   text-align: center;
   line-height: 25.6px;
 }
-.partner .row .item-4 {
+.partner .overlay .row .item-4 {
   width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
-.partner .row .item-4 img {
+.partner .overlay .row .item-4 img {
   background-color: var(--partner-icon);
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
-.partner .row .item-4 h2 {
+.partner .overlay .row .item-4 h2 {
   font-size: 32px;
   font-weight: 600;
   color: var(--grey);
   text-align: center;
   line-height: 56px;
 }
-.partner .row .item-4 p {
+.partner .overlay .row .item-4 p {
   font-size: 16px;
   font-weight: 400;
   color: var(--grey);
