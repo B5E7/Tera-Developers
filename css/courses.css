@@ -1,6 +1,7 @@
 :root {
   --black:#000;
   --black2:#131313;
+  --black3:#403E3B;
   --nav-text:rgb(227, 227, 227 );
   --orange:#CE9E4A;
   --white:#fff;
@@ -11,7 +12,9 @@
   --grey5:#DFDFDD;
   --grey6:#666;
   --grey7:rgba(227, 227, 227, 0.60);
-  --home-bloges:rgba(255, 255, 255, 0.03);
+  --grey8:#1C1C1C;
+  --grey9:#737373;
+  --home-blog: rgba(255, 255, 255, 0.03);
   --home-bloges-hover:#fff1;
   --questions-border:rgba(246, 237, 221, 0.20);
   --gradiant-color: #131313;
@@ -19,6 +22,7 @@
   --gradiant-direction: to top;
   --footer-bottom:rgba(255, 255, 255, 0.60);
   --partner-icon:rgba(255, 255, 255, 0.15);
+  --btn-hover:rgba(227 227 227 / 1.0);
 }
 
 @font-face {
@@ -144,6 +148,7 @@ header .row .icons .account {
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 header .row .icons .account svg {
   width: 22px;
@@ -154,6 +159,7 @@ header .row .icons .cart {
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 header .row .icons .cart svg {
   width: 22px;
@@ -223,6 +229,9 @@ header .row .icons .cart svg {
   color: var(--grey);
   gap: 5px;
 }
+.courses-items .top .right svg path {
+  stroke: var(--grey);
+}
 .courses-items .row {
   display: flex;
   justify-content: space-between;
@@ -230,6 +239,7 @@ header .row .icons .cart svg {
   gap: 24px;
 }
 .courses-items .row .item-1 {
+  cursor: pointer;
   width: 25%;
 }
 .courses-items .row .item-1 .img {
@@ -275,6 +285,7 @@ header .row .icons .cart svg {
   color: var(--grey);
 }
 .courses-items .row .item-2 {
+  cursor: pointer;
   width: 25%;
 }
 .courses-items .row .item-2 .img {
@@ -317,6 +328,7 @@ header .row .icons .cart svg {
   color: var(--grey);
 }
 .courses-items .row .item-3 {
+  cursor: pointer;
   width: 25%;
 }
 .courses-items .row .item-3 .img {
@@ -359,6 +371,7 @@ header .row .icons .cart svg {
   color: var(--grey);
 }
 .courses-items .row .item-4 {
+  cursor: pointer;
   width: 25%;
 }
 .courses-items .row .item-4 .img {

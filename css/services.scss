@@ -100,6 +100,7 @@ header{
                 outline: none;
                 border: none;
                 background-color: transparent;
+                cursor: pointer;
                 svg{
                     width: 22px;
                     height: 22px;
@@ -110,6 +111,7 @@ header{
                 outline: none;
                 border: none;
                 background-color: transparent;
+                cursor: pointer;
                 svg{
                     width: 22px;
                     height: 22px;
@@ -199,6 +201,10 @@ header{
                 padding: 16px 24px;
                 border: 1px solid var(--black2);
                 border-radius: 4px;
+                &:hover{
+                    background-color: var(--btn-hover);
+                    transition: 0.3s;
+                }
             }
 
         }
@@ -496,6 +502,10 @@ header{
                     padding: 16px 24px;
                     border-radius: 4px;
                     max-width: 240px;
+                    &:hover{
+                        background-color: var(--btn-hover);
+                        transition: 0.3s;
+                    }
                 }
             }
         }
@@ -572,6 +582,11 @@ header{
                     padding: 16px 24px;
                     border-radius: 4px;
                     max-width: 240px;
+
+                    &:hover{
+                        background-color: var(--btn-hover);
+                        transition: 0.3s;
+                    }
                 }
             }
         }
@@ -645,6 +660,11 @@ header{
                     padding: 16px 24px;
                     border-radius: 4px;
                     max-width: 240px;
+
+                    &:hover{
+                        background-color: var(--btn-hover);
+                        transition: 0.3s;
+                    }
                 }
             }
         }
@@ -759,6 +779,11 @@ header{
                 padding: 16px 24px;
                 border: 1px solid var(--white);
                 border-radius: 4px;
+                &:hover{
+                    background-color: var(--white);
+                    transition: 0.3s;
+                    color: var(--black);
+                }
             }
 
             .right{
@@ -770,6 +795,11 @@ header{
                 padding: 16px 24px;
                 border: 1px solid var(--white);
                 border-radius: 4px;
+
+                &:hover{
+                    background-color: var(--btn-hover);
+                    transition: 0.3s;
+                }
             }
         }
         .slider{
@@ -846,6 +876,10 @@ header{
                 padding: 16px 24px;
                 border-radius: 4px;
                 max-width: 240px;
+                &:hover{
+                    background-color: var(--btn-hover);
+                    transition: 0.3s;
+                }
             }
             .third{
                 @include font(12px, 400);

@@ -100,6 +100,7 @@ header{
                 outline: none;
                 border: none;
                 background-color: transparent;
+                cursor: pointer;
                 svg{
                     width: 22px;
                     height: 22px;
@@ -110,6 +111,7 @@ header{
                 outline: none;
                 border: none;
                 background-color: transparent;
+                cursor: pointer;
                 svg{
                     width: 22px;
                     height: 22px;
@@ -191,6 +193,9 @@ header{
             @include flex(space-between, center);
             color: var(--grey);
             gap: 5px;
+            svg path{
+                stroke: var(--grey);
+            }
         }
     }
 
@@ -199,6 +204,7 @@ header{
         gap: 24px;
 
         .item-1{
+            cursor: pointer;
             width: 25%;
             .img{
                 position: relative;
@@ -241,6 +247,7 @@ header{
         }
 
         .item-2{
+            cursor: pointer;
             width: 25%;
             .img{
                 position: relative;
@@ -281,6 +288,7 @@ header{
         }
 
         .item-3{
+            cursor: pointer;
             width: 25%;
             .img{
                 position: relative;
@@ -322,6 +330,7 @@ header{
         }
 
         .item-4{
+            cursor: pointer;
             width: 25%;
             .img{
                 position: relative;

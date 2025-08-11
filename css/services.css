@@ -13,8 +13,8 @@
   --grey6:#666;
   --grey7:rgba(227, 227, 227, 0.60);
   --grey8:#1C1C1C;
-  --grey9:#737373
-  --home-bloges:rgba(255, 255, 255, 0.03);
+  --grey9:#737373;
+  --home-blog: rgba(255, 255, 255, 0.03);
   --home-bloges-hover:#fff1;
   --questions-border:rgba(246, 237, 221, 0.20);
   --gradiant-color: #131313;
@@ -22,6 +22,7 @@
   --gradiant-direction: to top;
   --footer-bottom:rgba(255, 255, 255, 0.60);
   --partner-icon:rgba(255, 255, 255, 0.15);
+  --btn-hover:rgba(227 227 227 / 1.0);
 }
 
 @font-face {
@@ -147,6 +148,7 @@ header .row .icons .account {
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 header .row .icons .account svg {
   width: 22px;
@@ -157,6 +159,7 @@ header .row .icons .cart {
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 header .row .icons .cart svg {
   width: 22px;
@@ -234,6 +237,10 @@ header .row .icons .cart svg {
   padding: 16px 24px;
   border: 1px solid var(--black2);
   border-radius: 4px;
+}
+.hero .row .anc-group .link:hover {
+  background-color: var(--btn-hover);
+  transition: 0.3s;
 }
 
 @media (max-width: 960px) {
@@ -531,6 +538,10 @@ header .row .icons .cart svg {
   border-radius: 4px;
   max-width: 240px;
 }
+.discover .front-end .row .content a:hover {
+  background-color: var(--btn-hover);
+  transition: 0.3s;
+}
 .discover .design {
   padding-top: 100px;
 }
@@ -611,6 +622,10 @@ header .row .icons .cart svg {
   border-radius: 4px;
   max-width: 240px;
 }
+.discover .design .row .content a:hover {
+  background-color: var(--btn-hover);
+  transition: 0.3s;
+}
 .discover .shopify {
   padding-top: 100px;
 }
@@ -687,6 +702,10 @@ header .row .icons .cart svg {
   padding: 16px 24px;
   border-radius: 4px;
   max-width: 240px;
+}
+.discover .shopify .row .content a:hover {
+  background-color: var(--btn-hover);
+  transition: 0.3s;
 }
 
 @media (max-width: 1000px) {
@@ -798,6 +817,11 @@ header .row .icons .cart svg {
   border: 1px solid var(--white);
   border-radius: 4px;
 }
+.work .bottom .anc-group .left:hover {
+  background-color: var(--white);
+  transition: 0.3s;
+  color: var(--black);
+}
 .work .bottom .anc-group .right {
   display: flex;
   justify-content: space-between;
@@ -810,6 +834,10 @@ header .row .icons .cart svg {
   padding: 16px 24px;
   border: 1px solid var(--white);
   border-radius: 4px;
+}
+.work .bottom .anc-group .right:hover {
+  background-color: var(--btn-hover);
+  transition: 0.3s;
 }
 .work .bottom .slider {
   display: flex;
@@ -884,6 +912,10 @@ header .row .icons .cart svg {
   padding: 16px 24px;
   border-radius: 4px;
   max-width: 240px;
+}
+.ready .row .content a:hover {
+  background-color: var(--btn-hover);
+  transition: 0.3s;
 }
 .ready .row .content .third {
   font-size: 12px;
